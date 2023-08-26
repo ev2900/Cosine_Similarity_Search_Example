@@ -18,4 +18,8 @@ The example in this repository uses a transformer based approach for converting 
 
 ## What is Cosine Similarity Search
 
+Cosine similarity measures the cosine of the angle between two vectors. This indicates how similar their directions are regardless of their magnitudes. Explained simply cosine similarity can quantify how similar two vectors are. 
+
+In search applications if we represent our search query as vector(s) and our search-able text as vector(s). we can determine which search-able text is most similar to our search query.
+
 ## Example in Python
