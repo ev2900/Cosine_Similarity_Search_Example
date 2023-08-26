@@ -19,7 +19,7 @@ embeddings = model.encode(corpus)
 search_query = "M70 Android"
 search_query_encode = model.encode(search_query)
 
-# Compute cosine similarity between all pairs
+# Compute cosine similarity between search query and all sentences 
 cos_sim = util.cos_sim(search_query_encode, embeddings)
 
 # Show similarity score of each document to the search query
