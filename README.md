@@ -38,7 +38,7 @@ In this example we have a corpus of 4 documents
 
 ```
 corpus = [
-	"does this work with xbox?",
+    "does this work with xbox?",
     "Does the M70 work with Android phones?", 
     "does this work with iphone?",
     "Can this work with an xbox "
