@@ -23,3 +23,24 @@ Cosine similarity measures the cosine of the angle between two vectors. This ind
 In search applications if we represent our search query as vector(s) and our search-able text as vector(s). we can determine which search-able text is most similar to our search query.
 
 ## Example in Python
+
+### Install sentence_transformers library
+
+```pip install sentence_transformers``` or in a Juypter notebook run ```!pip install sentence_transformers```
+
+To confirm that the installation was successful import the BM250kapi item from the rank_bm25 library run
+
+```from sentence_transformers import SentenceTransformer, util```
+
+### Create corpus of documents
+
+In this example we have a corpus of 4 documents
+
+```
+corpus = [
+	"does this work with xbox?",
+    "Does the M70 work with Android phones?", 
+    "does this work with iphone?",
+    "Can this work with an xbox "
+]
+```
