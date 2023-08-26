@@ -44,3 +44,35 @@ corpus = [
     "Can this work with an xbox "
 ]
 ```
+
+### Download transformer model and encode documents
+```
+model = SentenceTransformer('all-MiniLM-L6-v2')
+
+embeddings = model.encode(corpus)
+```
+
+### Encode a search query
+```
+search_query = "M70 Android"
+search_query_encode = model.encode(search_query)
+```
+
+### Compute cosine similarity between search query and all sentencase
+```
+cos_sim = util.cos_sim(search_query_encode, embeddings)
+```
+
+# Return the most similar document to the search query
+```
+similarity_scores = []
+for i in range(list(cos_sim.size())[1]):
+	similarity_scores.append(cos_sim[0][i].item())
+
+print(corpus[similarity_scores.index(max(similarity_scores))])
+
+---- result below ----
+
+Does the M70 work with Android phones?
+
+```
