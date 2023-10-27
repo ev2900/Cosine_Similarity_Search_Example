@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer, util
 
 # Create corpus of documents
 corpus = [
-	"does this work with xbox?",
+    "does this work with xbox?",
     "Does the M70 work with Android phones?", 
     "does this work with iphone?",
     "Can this work with an xbox "
