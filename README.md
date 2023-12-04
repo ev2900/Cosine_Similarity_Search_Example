@@ -1,5 +1,7 @@
 # Hugging Transformer Based Embeddings and Cosine Similarity Search Example
 
+<img width="85" alt="map-user" src="https://img.shields.io/badge/views-0000-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-0000-green">
+
 This example demonstrates how to transform text into embeddings via. Hugging Face sentence transform library. Once the text is represented as embeddings cosine similarity search can determine which embeddings are most similar to a search query
 
 ## What are Text Embeddings
